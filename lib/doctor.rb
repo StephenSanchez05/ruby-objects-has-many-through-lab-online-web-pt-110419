@@ -10,7 +10,11 @@ class Doctor
     @@all << self
   end 
   
+<<<<<<< HEAD
   def new_appointment(patient, date)
+=======
+  def new_appointment(date, patient)
+>>>>>>> 24de8bdebd71029d56a1452477e2b351eaa89846
     Appointment.new(date, patient, self)
   end
   
@@ -21,7 +25,11 @@ class Doctor
   end
   
   def patients
+<<<<<<< HEAD
     appointments.map(&:patient)
+=======
+    appointments.patient
+>>>>>>> 24de8bdebd71029d56a1452477e2b351eaa89846
   end
   
   def self.all
